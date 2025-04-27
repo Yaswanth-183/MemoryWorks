@@ -1,0 +1,1 @@
+This is a placeholder for events_and_objects.js

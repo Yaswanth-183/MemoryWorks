@@ -1,0 +1,1 @@
+This is a placeholder for jquery_ajax_app.js
