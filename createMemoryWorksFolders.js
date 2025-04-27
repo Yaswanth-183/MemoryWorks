@@ -16,7 +16,12 @@ folders.forEach(folder => {
     if (!fs.existsSync(folderPath)) {
         fs.mkdirSync(folderPath);
         console.log(`Folder created: ${folder}`);
-    } else {
-        console.log(`Folder already exists: ${folder}`);
+    }
+
+    // Create a .gitkeep file inside each folder
+    const gitkeepPath = `${folderPath}/.gitkeep`;
+    if (!fs.existsSync(gitkeepPath)) {
+        fs.writeFileSync(gitkeepPath, '');
+        console.log(`.gitkeep created inside: ${folder}`);
     }
 });
